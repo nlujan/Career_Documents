@@ -1,0 +1,118 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{enumitem}
+\usepackage{bbding}
+\usepackage{tikz}
+\usepackage{pifont}
+
+\begin{document} 
+ 
+\name{ {\LARGE Naim J. Lujan}\\[8pt]} % the \\[12pt] adds a blank line after name
+ 
+\address{ 528 Beacon Street \\ Boston, MA 02215 }
+\address{naim@mit.edu \\ (956) 369-7286  \\[2pt]}
+
+
+\begin{resume} 
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 2pt}\smallskip 
+ 
+\vspace{-5pt}
+
+\section{{\large Education} } 
+
+\vspace{-10pt}
+
+\noindent\rule{\resumewidth}{0.4pt}   % black line after header
+
+\vspace{-5pt}
+
+{\bf Massachusetts Institute of Technology} \hfill {\bf Cambridge, MA} \\
+B.S. in Computer Science and Engineering \hfill June 2014 \\
+Algorithms, Software Construction, Web Programming \\
+Artificial Intelligence \\
+GPA 4.0/5.0
+
+\address{naim@mit.edu \\ (956) 369-7286 }
+
+\section{{\large Experience}}
+
+\vspace{-10pt}
+\noindent\rule{\resumewidth}{0.4pt}   % black line after header
+\vspace{-15pt}
+
+%XPO Logistics
+ {\bf XPO Logistics} \hfill {\bf Cambridge, MA} \\
+Software Development Intern \hfill Jan 2014 - Feb 2014 
+ \begin{itemize}
+\renewcommand{\labelitemi}{$\circ $} 
+\itemsep -2pt  % reduce space between items
+
+ \item Created regression model to lower check volume 
+                 forecast errors
+ \item Authored PC-based software to determine optimal 
+                 staff levels 
+ \end{itemize}
+
+%Qualcomm
+ {\bf Qualcomm} \hfill {\bf San Diego, CA} \\
+Software Development Intern \hfill June 2013 - Aug 2013 
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Built Python GUI tool that expedites the creation of software 
+	change requests through API calls and sophisticated data manipulation.
+ \item Implemented enhanced data analysis features of a Data Miner in C that
+	 improves the accuracy of RF software implementations.
+ \end{itemize}
+
+ %Labatt Food Service
+ {\bf Labatt Food Service} \hfill {\bf San Antonio, TX} \\
+Software Development Intern \hfill June 2012 - Aug 2012 
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Built web application using ASP.NET to analyze data, determine key limitations of
+	forecast system, and develop algorithmic hypotheses.
+ \item Implemented forecasting algorithms in VB.NET to accurately predict product demand
+	and overcome pitfalls of previous system.
+ \end{itemize}
+
+%UPOP
+ {\bf Undergraduate Practice Opportunities Program (UPOP)} \hfill {\bf Cambridge, MA} \\
+Participant \hfill Aug 2011 - June 2012
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item	Participated in a self-selecting, professional development and engineering leadership effectiveness program preparing MIT students for success in the workplace.
+ \item Received academic training in engineering modules and personalized coaching in career development over the course of one year. 
+ \end{itemize}
+
+%Interphase
+ {\bf Interphase Program} \hfill {\bf Cambridge, MA} \\
+Participant \hfill June 2010 - Aug 2010 
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item	Rigorous seven-week summer residential, academic and community-building program for admitted MIT students that instilled subject mastery of calculus, physics and chemistry.
+ \item Participated in laboratory research with faculty mentors. Engaged in small-group learning activities and workshops designed to develop analytical thinking and communication skills.
+ \end{itemize}
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{{\large Skills}}
+
+%\smallskip  % add some space after the header
+\vspace{-10pt}
+\noindent\rule{\resumewidth}{0.4pt}   % black line after header
+\vspace{-5pt}
+
+   \begin{tabular}{l p{3in}}
+    \underline{Languages:} & COBOL, Pascal,C, APL, Basic \\
+
+     \underline{Software:} &  SPIRES, dBase III, Datastar database 
+                        systems, GPSS simulation, FCS-EPS financial 
+                        planning, SAS statistical analysis, 
+                        Lotus1-2-3, MPSX optimization modeling 
+ \end{tabular}
+
+\end{resume} 
+\end{document} 
